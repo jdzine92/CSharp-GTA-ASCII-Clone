@@ -1,0 +1,17 @@
+PLAYER_NAME: .
+CREDITS: 100.
+PLAYER_HEALTH: 10.
+ARMOUR_HEALTH: 0.
+WANTED_LEVEL: 0.
+CURRENT_LOCATION: GLENDALE PRISON.
+FISTS: true, false, true.
+BRASS KNUCKLES: false, true, false.
+BASEBALL BAT: false, true, false.
+HAMMER: false, false, false.
+MACHETE: false, false, false.
+GLOCK PISTOL: false, false, false.
+SHOTGUN: false, false, false.
+PETROL BOMB: false, false, false.
+MAC 10: false, false, false.
+ROCKET LAUNCHER: false, false, false.
+BODY ARMOUR: false, false, false.
