@@ -1,7 +1,12 @@
 # C# GTA ASCII Clone
-### A GTA clone text based game made with C#, ASCII graphics complete with fleshed out logic, display and load/save states 
+## A GTA clone text based game made with C#, ASCII graphics complete with weapons, logic, ASCII display, load/save states, unit testing.
+![alt text][gameplay1]
+<br>
+![alt text][gameplay2]
+### How to play:
+#### Run GTA-CLONE.exe - located in /bin/Debug/net6.0/
 ***
-
+#### Files / Functions listed below:
 #### Program.cs - Main entry point for program. PLAYER instance and Weapon instances declared here, text rendered in main.
 No functions to list in Program.cs <br>
 All text display including game dialog can be found in Main.
@@ -122,5 +127,5 @@ No functions to list in Limits.cs <br>
 + UnlockWeapons() - Allows new weapons to be unlocked based on game progress, takes 2 args (WEAPONS[], progress (range 1-5)) <br>
 ***
 
-[logo]: https://github.com/jdzine92/CSharp-GTA-ASCII-Clone/blob/main/gtacsharp.PNG "GTA C# ASCII Game"
-[gameplay]: https://github.com/jdzine92/CSharp-GTA-ASCII-Clone/blob/main/gameplay.png "Gameplay"
+[gameplay1]: https://github.com/jdzine92/CSharp-GTA-ASCII-Clone/blob/main/gtacsharp.PNG "GTA C# ASCII Game"
+[gameplay2]: https://github.com/jdzine92/CSharp-GTA-ASCII-Clone/blob/main/gameplay.png "Gameplay"
