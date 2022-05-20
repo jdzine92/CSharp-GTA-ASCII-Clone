@@ -10,16 +10,17 @@ namespace JordansGTAClone
             Random rnd = new Random();
             uint randomCredits = (uint)rnd.Next(1, 21);
 
+             Display.TextColour("reward", " ________ ");
+            Display.TextColour("reward", "|  ----  |");
+            Display.TextColour("reward", "|   ??   |");
+            Display.TextColour("reward", "|  ----  |");
+            Display.TextColour("reward", "|________|\n");
+            Display.TextColour("narratorWriteLine","Narrator: You found a mystery box ! Press 'Y' to open it.");
+            Display.TextColour("yellow >>", ">> ");
+
             bool boxValidation = false;
             while (!boxValidation)
             {
-                WriteLine(" ________ ");
-                WriteLine("|  ----  |");
-                WriteLine("|   ??   |");
-                WriteLine("|  ----  |");
-                WriteLine("|________|\n");
-                WriteLine("You found a mystery box ! Press 'Y' to open it.");
-                Display.TextColour("yellow >>", ">> ");
                 string rawResponse = ReadLine();
                 string response = rawResponse.ToUpper();
                 if (response == "Y")
@@ -28,7 +29,7 @@ namespace JordansGTAClone
                     WriteLine($"There are {randomCredits} credits inside.");
                     PLAYER.CREDITS += randomCredits;
                     Thread.Sleep(2000);
-                    WriteLine($"You now have {PLAYER.CREDITS} credits.");
+                    WriteLine($"You now have {PLAYER.CREDITS} credits.\n");
                     Thread.Sleep(2000);
                     boxValidation = true;
                     break;
@@ -45,10 +46,17 @@ namespace JordansGTAClone
         public static void BodyArmour(Player PLAYER)
         {
             char armourASCII = Convert.ToChar(164);
-
-            WriteLine("You found body armour !");
+            Display.TextColour("reward", @"\-----/");
+            Display.TextColour("reward", " |   |");
+            Display.TextColour("reward", "o-----o");
+            Display.TextColour("reward", "o-----o");
+            Display.TextColour("reward", "[[] []]\n");
+            Thread.Sleep(2000);
+            Display.TextColour("narratorWriteLine", "Narrator:You found body armour !");
+            Thread.Sleep(2000);
             PLAYER.ARMOUR_HEALTH = Limits.MAX_ARMOUR_HEALTH;
-            WriteLine($"ARMOUR: {armourASCII} {PLAYER.ARMOUR_HEALTH}");
+            Display.TextColour("stats", $"ARMOUR: {armourASCII} {PLAYER.ARMOUR_HEALTH}");
+            Thread.Sleep(2000);
         }
     }
 }
