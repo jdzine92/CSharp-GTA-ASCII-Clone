@@ -97,7 +97,7 @@ All functions are called from here.
 ***
 
 #### UnitTests.cs - Tests every function from each file is working as intended. 
-:small_blue_diamond: MainMenu() - Shows the main unit tests menu. **ONLY FOR TESTING AND DEBUGGING**
+:small_blue_diamond: MainMenu() - Shows the main unit tests menu. **ONLY FOR TESTING AND DEBUGGING** <br>
 :small_blue_diamond: RunAnotherTest() - Allows option to run another test before exiting. Takes 1 arg (PLAYER), passed from MainMenu() <br>
 ***
 
