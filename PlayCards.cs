@@ -116,6 +116,7 @@ namespace JordansGTAClone
                         while (!playAgain)
                         {
                             Display.TextColour("tony", "Tony: Want to play me again? Press 'Y' for yes or 'N' for no..");
+                            Display.TextColour("yellow >>", ">> ");
                             string rawResponse = ReadLine();
                             string response = rawResponse.ToUpper();
                             if (response == "Y")
