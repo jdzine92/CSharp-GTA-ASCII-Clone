@@ -213,6 +213,134 @@ class Display
         }
     }
 
+    public static void DisplayCard(int num)
+    {
+        switch (num)
+        {
+            case 1:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|A .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____A|\n");
+            Thread.Sleep(1000);
+            break;
+        case 2:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|2 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____2|\n");
+            Thread.Sleep(1000);
+            break;
+        case 3:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|3 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____3|\n");
+            Thread.Sleep(1000);
+            break;
+        case 4:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|4 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____4|\n");
+            Thread.Sleep(1000);
+            break;
+        case 5:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|5 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____5|\n");
+            Thread.Sleep(1000);
+            break;
+        case 6:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|6 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____6|\n");
+            Thread.Sleep(1000);
+            break;
+        case 7:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|7 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____7|\n");
+            Thread.Sleep(1000);
+            break;
+        case 8:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|8 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____8|\n");
+            Thread.Sleep(1000);
+            break;
+        case 9:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|9 .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____9|\n");
+            Thread.Sleep(1000);
+            break;
+        case 10:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|10 . |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|___10|\n");
+            Thread.Sleep(1000);
+            break;
+        case 11:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|J .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____J|\n");
+            Thread.Sleep(1000);
+            break;
+        case 12:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|Q .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____Q|\n");
+            Thread.Sleep(1000);
+            break;
+        case 13:
+            TextColour("cards", " _____ ");
+            TextColour("cards", "|K .  |");
+            TextColour("cards", @"| / \ |");
+            TextColour("cards", @"| \ / |");
+            TextColour("cards", "|  .  |");
+            TextColour("cards", "|____K|\n");
+            Thread.Sleep(1000);
+            break;
+        default:
+                //for debugging only
+                WriteLine("INVALID CARD.");
+                break;
+        }
+    }
+
     //DISPLAY LOADING TIMER
     //500 CAB, 400 MISSION, 250 SHORT/STATS/INVENTORY
     public static void Loading(int ms)
@@ -227,6 +355,25 @@ class Display
     }
 
     //MODIFY TEXT COLOURS
+    /* OPTIONS BELOW:
+    Black
+    DarkBlue
+    DarkGreen
+    DarkCyan
+    DarkRed
+    DarkMagenta
+    DarkYellow
+    Gray
+    DarkGray
+    Blue
+    Green
+    Cyan
+    Red
+    Magenta
+    Yellow
+    White
+    */
+
     public static void TextColour(string colour, string text)
     {
         switch (colour)
@@ -280,6 +427,18 @@ class Display
                 break;
 
             case "cab":
+                ForegroundColor = ConsoleColor.DarkMagenta;
+                WriteLine(text);
+                ResetColor();
+                break;
+
+            case "cards":
+                ForegroundColor = ConsoleColor.DarkBlue;
+                WriteLine(text);
+                ResetColor();
+                break;
+
+            case "cards-stats":
                 ForegroundColor = ConsoleColor.DarkMagenta;
                 WriteLine(text);
                 ResetColor();
